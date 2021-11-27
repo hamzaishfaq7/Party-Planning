@@ -1,0 +1,452 @@
+html {
+    scroll-behavior: smooth;
+    font-size: 10px;
+  }
+  
+  *{
+  
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: auto;
+  
+  }
+  
+  body{
+    margin: 0;
+    padding: 0;
+  }
+  
+  .changeText{
+    color: #8D6B94;
+  }
+
+
+  /*THIS IS THE START OF THE NAVBAR CODE*/
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #8D6B94;
+    color: white;
+}
+  
+.logo{
+    max-width: 350px;
+    padding: 5px;
+    padding-top: 0px;
+    overflow: hidden;
+    margin: .3rem;
+}
+
+.navbarLinks ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbarLinks li{
+    list-style: none;
+}
+
+.navbarLinks li a{
+    text-decoration: none;
+    color: white;
+    padding: 2rem;
+    font-size: 20px;
+}
+
+.navbarLinks a:hover{
+    color: black;
+}
+  /*THIS IS THE END OF THE NAVBAR CODE*/
+
+
+
+  /*THIS IS THE START OF CODE FOR THE FULL PAGE SLIDER CODE*/
+
+
+  .slideShow{
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .slideShowPictures{
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    animation: cycleImages 21s infinite;
+    opacity: 0;
+  }
+  
+  
+  .slideShowPictures img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: zoomIn 21s infinite;
+  }
+  
+  .slideShowPictures:nth-last-child(1), 
+  .slideShowPictures:nth-last-child(1) img{
+    animation-delay: 0s;
+  }
+  
+  .slideShowPictures:nth-last-child(2), 
+  .slideShowPictures:nth-last-child(2) img{
+    animation-delay: 10s;
+  }
+  
+  .slideShowText{
+    max-width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    color:#fff;
+    padding: 10rem 5rem;
+  }
+  
+  .slideShowText h5{
+    font-size: 5rem;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    margin-bottom: 2.5rem;
+  }
+  
+  .slideShowText p{
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-weight: 300;
+  }
+  
+  
+  
+  
+  
+  
+  
+  @keyframes cycleImages{
+    25%{
+        opacity: 1;
+    }
+    40%{
+        opacity: 0;
+    }
+  }
+  
+  
+  @keyframes zoomIn{
+    100%{
+        transform: scale(1.5);
+    }
+  }
+  
+  @media screen and (max-width: 1000px) {
+    .slideShowText{
+        max-width: 70%;
+        padding: 5rem 1rem;
+    }
+  
+    .slideShowText h5{
+        font-size: 4rem;
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .slideShowText{
+        max-width: 100%;
+        padding: 2rem;
+        top: initial;
+        transform: initial;
+        bottom: 0;
+    }
+  
+    .slideShowText h5{
+        font-size: 3rem;
+    }
+  
+    
+    .slideShowText p{
+        font-size: 1.4rem;
+    }
+  }
+  
+
+
+  /*THIS IS THE END OF THE CODE FOR THE FULL PAGE SLIDER CODE*/
+
+
+
+  /*THIS IS THE START OF THE CODE FOR THE WHY US PAGE CODE*/
+
+  .whyUs{
+      background-color: #8D6B94;
+  }
+
+  .whyUs h1{
+      font-size: 25px;
+      text-align: center;
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+
+
+  
+
+  /*THIS IS THE END OF THE CODE FOR THE WHY US PAGE CODE*/
+
+
+
+
+    /*THIS IS THE START OF THE CODE FOR THE FULL PAGE SLIDER CODE*/
+
+    .aboutUs{
+        background-color: #8D6B94;
+    }
+
+    .aboutUs h1{
+      padding-top: 15px;
+      text-align: center;
+      font-size: 35px;
+    }
+
+
+    .container h4, p{
+      text-align: center;
+      font-size: 15px;
+    }
+  
+  /* Float four columns side by side */
+.col {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+  background-color: #8D6B94;
+}
+
+
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: #8D6B94;
+  margin-bottom: 100px;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+    /*THIS IS THE END OF THE CODE FOR THE FULL PAGE SLIDER CODE*/
+
+
+
+
+
+
+    /*THIS IS THE CODE FOR THE FOOTER LAYOUT*/
+
+footer{
+	position: relative;
+	bottom: 0;
+}
+
+@media (max-height:800px){
+	footer { position: static; }
+	header { padding-top:40px; }
+}
+
+
+.footer-distributed{
+	background-color: #8D6B94;
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 50px 50px 50px 50px;
+	margin-top: 400px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 30%;
+}
+
+.footer-distributed h3{
+	color:  #ffffff;
+  font-size: 4rem;
+	margin: 0;
+}
+
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #4a90e2;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+
+.footer-distributed .footer-center i{
+	background-color:  ##24252A;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  #4a90e2;
+	text-decoration: none;;
+}
+
+
+/* Footer Right */
+
+.gMaps{
+  margin-right: 20px;
+}
+
+.footer-distributed .footer-right{
+	width: 30%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: inline-block;
+	color:  #ffffff;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 75px;
+	height: 75px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 90px;
+
+	font-size: 40px;
+	color: #4a90e2;
+	text-align: center;
+	line-height: 5px;
+
+	margin-right: 3px;
+	margin-bottom: 0px;
+}
+
+/* Here is the code for Responsive Footer */
+/* You can remove below code if you don't want Footer to be responsive */
+
+
+@media (max-width: 880px) {
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 10px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+}
+
+
+/* Style all font awesome icons */
+.footer-icons a {
+  padding: 15px;
+  font-size: 30px;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+/* Add a hover effect if you want */
+.footer-icons:hover {
+  opacity: 0.7;
+}
+
+ 
+/*THIS IS THE END OF THE CODE FOR THE FOOTER LAYOUT*/
