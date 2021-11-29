@@ -1,3 +1,6 @@
+// THIS IS THE CODE FOR THE SLIDES ANIMATION ON THE MAIN PAGE.
+
+
 var slideIndex = 0;
 showSlides();
 
@@ -15,7 +18,7 @@ function showSlides() {
 
 
 
-
+// THIS IS THE CODE FOR THE HAMBURGER MENU FOR SMALLER SCREENS AND MOBILE SCREENS.
 
 
 

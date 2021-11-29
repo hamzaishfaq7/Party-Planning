@@ -1,73 +1,70 @@
+/*THIS IS THE START OF THE GENERAL LAYOUT CODE*/
+
 html {
-    scroll-behavior: smooth;
-    font-size: 10px;
-  }
-  
-  *{
-  
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    width: auto;
-    height: auto;
-  
-  }
-  
-  body{
-    margin: 0;
-    padding: 0;
-    font-family: 'Source Code Pro', monospace;
-  }
-  
-  .changeText{
-    color: #8E6970;
-  }
-
-
-  /*THIS IS THE START OF THE NAVBAR CODE*/
-
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #8E6970;
-}
-  
-.logo{
-    max-width: 350px;
-    padding: 5px;
-    padding-top: 0px;
-    overflow: hidden;
-    margin: .3rem;
-    height: 150px;
-  }
-
-
-.navbarLinks ul{
-    margin: 0;
-    padding: 0;
-    display: flex;
+  scroll-behavior: smooth;
+  font-size: 10px;
 }
 
-.navbarLinks li{
-    list-style: none;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  height: auto;
 }
 
-.navbarLinks li a{
-    text-decoration: none;
-    color: black;
-    padding: 2rem;
-    font-size: 25px;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Source Code Pro", monospace;
 }
 
-.navbarLinks a:hover{
-    color: white;
+.changeText {
+  color: #8e6970;
 }
 
+/*THIS IS THE END OF THE GENERAL LAYOUT CODE*/
 
+/*THIS IS THE START OF THE NAVBAR CODE*/
 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #8e6970;
+}
 
-.toggle{
+.logo {
+  max-width: 350px;
+  padding: 5px;
+  padding-top: 0px;
+  overflow: hidden;
+  margin: 0.3rem;
+  height: 150px;
+}
+
+.navbarLinks ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbarLinks li {
+  list-style: none;
+}
+
+.navbarLinks li a {
+  text-decoration: none;
+  color: black;
+  padding: 2rem;
+  font-size: 25px;
+}
+
+.navbarLinks a:hover {
+  color: white;
+}
+
+.toggle {
   position: absolute;
   top: 6.5rem;
   right: 1rem;
@@ -78,18 +75,15 @@ html {
   height: 31px;
 }
 
-.toggle .barsForMobile{
+.toggle .barsForMobile {
   height: 3px;
   width: 100%;
   background-color: white;
   border-radius: 10px;
 }
 
-
-
-
 @media (max-width: 600px) {
-  .toggle{
+  .toggle {
     display: flex;
   }
 
@@ -103,16 +97,16 @@ html {
     align-items: flex-start;
   }
 
-  .navbarLinks ul{
+  .navbarLinks ul {
     width: 100%;
     flex-direction: column;
   }
 
-  .navbarLinks li{
+  .navbarLinks li {
     text-align: center;
   }
 
-  .navbarLinks a{
+  .navbarLinks a {
     padding: 0.5rem 1rem;
   }
 
@@ -121,212 +115,163 @@ html {
   }
 }
 
+/*THIS IS THE END OF THE NAVBAR CODE*/
 
+/*THIS IS THE START OF CODE FOR THE FULL PAGE SLIDER CODE*/
 
+.slideShow {
+  width: 100%;
+  height: 85vh;
+  position: relative;
+  overflow: hidden;
+  background-color: #8e6970;
+}
 
+.slideShowPictures {
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  animation: cycleImages 21s infinite;
+  opacity: 0;
+}
 
+.slideShowPictures img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation: zoomIn 21s infinite;
+}
 
+.slideShowPictures:nth-last-child(1),
+.slideShowPictures:nth-last-child(1) img {
+  animation-delay: 0s;
+}
 
+.slideShowPictures:nth-last-child(2),
+.slideShowPictures:nth-last-child(2) img {
+  animation-delay: 10s;
+}
 
+.slideShowText {
+  max-width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  color: white;
+  padding: 10rem 5rem;
+}
 
+.slideShowText h5 {
+  font-size: 7rem;
+  text-transform: capitalize;
+  letter-spacing: 3px;
+  margin-bottom: 2.5rem;
+}
 
+.slideShowText p {
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
 
-
-
-
-
-
-
-
-
-
-
-  /*THIS IS THE END OF THE NAVBAR CODE*/
-
-
-
-  /*THIS IS THE START OF CODE FOR THE FULL PAGE SLIDER CODE*/
-
-
-  .slideShow{
-    width: 100%;
-    height: 85vh;
-    position: relative;
-    overflow: hidden;
-    background-color: #8E6970;
+@keyframes cycleImages {
+  25% {
+    opacity: 1;
   }
-  
-  .slideShowPictures{
-    position: absolute;
-    width: inherit;
-    height: inherit;
-    animation: cycleImages 21s infinite;
+  40% {
     opacity: 0;
   }
-  
-  
-  .slideShowPictures img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    animation: zoomIn 21s infinite;
-    
-  }
-  
-  .slideShowPictures:nth-last-child(1), 
-  .slideShowPictures:nth-last-child(1) img{
-    animation-delay: 0s;
-  }
-  
-  .slideShowPictures:nth-last-child(2), 
-  .slideShowPictures:nth-last-child(2) img{
-    animation-delay: 10s;
-  }
-  
-  .slideShowText{
-    max-width: 50%;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    color:white;
-    padding: 10rem 5rem;
-  }
-  
-  .slideShowText h5{
-    font-size: 7rem;
-    text-transform: capitalize;
-    letter-spacing: 3px;
-    margin-bottom: 2.5rem;
-  }
-  
-  .slideShowText p{
-    font-size: 2.5rem;
-    text-transform: capitalize;
-    letter-spacing: 1px;
-    font-weight: 300;
-  }
-  
-  
-  
-  
-  
-  
-  
-  @keyframes cycleImages{
-    25%{
-        opacity: 1;
-    }
-    40%{
-        opacity: 0;
-    }
-  }
-  
-  
-  @keyframes zoomIn{
-    100%{
-        transform: scale(1.5);
-    }
-  }
-  
-  @media screen and (max-width: 1000px) {
-    .slideShowText{
-        max-width: 70%;
-        padding: 5rem 1rem;
-    }
-  
-    .slideShowText h5{
-        font-size: 4rem;
-    }
-  }
-  
-  @media screen and (max-width: 767px) {
-    .slideShowText{
-        max-width: 100%;
-        padding: 2rem;
-        top: initial;
-        transform: initial;
-        bottom: 0;
-    }
-  
-    .slideShowText h5{
-        font-size: 3rem;
-    }
-  
-    
-    .slideShowText p{
-        font-size: 1.4rem;
-    }
-  }
-  
+}
 
+@keyframes zoomIn {
+  100% {
+    transform: scale(1.5);
+  }
+}
 
-  /*THIS IS THE END OF THE CODE FOR THE FULL PAGE SLIDER CODE*/
-
-
-
-  /*THIS IS THE START OF THE CODE FOR THE WHY US PAGE CODE*/
-
-  .whyUs{
-      background-color: #8E6970;
+@media screen and (max-width: 1000px) {
+  .slideShowText {
+    max-width: 70%;
+    padding: 5rem 1rem;
   }
 
-  .whyUs h1{
-      font-size: 25px;
-      text-align: center;
-      padding-top: 50px;
-      padding-bottom: 10px;
-      
+  .slideShowText h5 {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .slideShowText {
+    max-width: 100%;
+    padding: 2rem;
+    top: initial;
+    transform: initial;
+    bottom: 0;
   }
 
+  .slideShowText h5 {
+    font-size: 3rem;
+  }
 
-  
+  .slideShowText p {
+    font-size: 1.4rem;
+  }
+}
 
-  /*THIS IS THE END OF THE CODE FOR THE WHY US PAGE CODE*/
+/*THIS IS THE END OF THE CODE FOR THE FULL PAGE SLIDER CODE*/
 
+/*THIS IS THE START OF THE CODE FOR THE WHY US PAGE CODE*/
 
+.whyUs {
+  background-color: #8e6970;
+}
 
+.whyUs h1 {
+  font-size: 25px;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 10px;
+}
 
-    /*THIS IS THE START OF THE CODE FOR THE FULL PAGE SLIDER CODE*/
+/*THIS IS THE END OF THE CODE FOR THE WHY US PAGE CODE*/
 
-    .aboutUs{
-        background-color: #8E6970;
-    }
+/*THIS IS THE START OF THE CODE FOR THE FULL PAGE SLIDER CODE*/
 
-    .aboutUs h1{
-      padding-top: 25px;
-      text-align: center;
-      font-size: 35px;
-      padding-bottom: 15px;
-    }
+.aboutUs {
+  background-color: #8e6970;
+}
 
+.aboutUs h1 {
+  padding-top: 25px;
+  text-align: center;
+  font-size: 35px;
+  padding-bottom: 15px;
+}
 
-    .container h4, p{
-      text-align: center;
-      padding-top: 10px;
-      font-size: 20px;
-    }
-  
-  /* Float four columns side by side */
+.container h4,
+p {
+  text-align: center;
+  padding-top: 10px;
+  font-size: 20px;
+}
+
 .col {
   float: left;
   width: 25%;
   padding: 0 10px;
-  background-color: #8E6970;
+  background-color: #8e6970;
 }
 
-
-
-/* Style the counter cards */
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 16px;
   text-align: center;
-  background-color: #8E6970;
+  background-color: #8e6970;
   margin-bottom: 100px;
 }
 
-/* Responsive columns - one column layout (vertical) on small screens */
 @media screen and (max-width: 600px) {
   .column {
     width: 100%;
@@ -334,57 +279,52 @@ html {
     margin-bottom: 20px;
   }
 }
-    /*THIS IS THE END OF THE CODE FOR THE FULL PAGE SLIDER CODE*/
+/*THIS IS THE END OF THE CODE FOR THE FULL PAGE SLIDER CODE*/
 
+/*THIS IS THE CODE FOR THE FOOTER LAYOUT*/
 
+.footer {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #8e6970;
+  text-align: center;
+  color: black;
+}
 
+.footer h1 {
+  font-size: 24px;
+}
+.footer h2 {
+  font-size: 20px;
+}
 
+.icons {
+  padding-top: 1rem;
+}
 
+.icons a {
+  text-decoration: none;
+  font-size: 4rem;
+  margin: 0.5rem;
+  color: black;
+}
 
-    /*THIS IS THE CODE FOR THE FOOTER LAYOUT*/
+.company-name {
+  font-size: 1.6rem;
+  margin-top: 0.5rem;
+}
 
-    .footer{
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      background: #8E6970;
-      text-align: center;
-      color: black;
+@media (max-width: 500px) {
+  html {
+    font-size: 50%;
   }
+}
 
-  .footer h1{
-    font-size: 24px;
+@media (min-width: 501px) and (max-width: 768px) {
+  html {
+    font-size: 50%;
   }
-  .footer h2{
-    font-size: 20px;
-  }
-  
-  .icons{
-      padding-top: 1rem;
-  }
-  
-  .icons a{
-      text-decoration: none;
-      font-size: 4rem;
-      margin: 0.5rem;
-      color: black;
-  }
-  
-  .company-name{
-      font-size: 1.6rem;
-      margin-top: 0.5rem;
-  }
-  
-  @media (max-width: 500px){
-      html{
-          font-size: 50%;
-      }
-  }    
-  
-  @media(min-width: 501px) and (max-width: 768px){
-      html{
-      font-size: 50%;
-      }
-  }    
- 
+}
+
 /*THIS IS THE END OF THE CODE FOR THE FOOTER LAYOUT*/
