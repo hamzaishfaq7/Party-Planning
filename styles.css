@@ -270,12 +270,13 @@ p {
   text-align: center;
   background-color: #8e6970;
   margin-bottom: 100px;
+  overflow: hidden;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .column {
     width: 100%;
-    display: block;
+    display: contents;
     margin-bottom: 20px;
   }
 }
