@@ -19,7 +19,7 @@ html {
   }
   
   .changeText{
-    color: #8D6B94;
+    color: #8E6970;
   }
 
 
@@ -29,8 +29,7 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #8D6B94;
-    color: white;
+    background-color: #8E6970;
 }
   
 .logo{
@@ -39,7 +38,7 @@ html {
     padding-top: 0px;
     overflow: hidden;
     margin: .3rem;
-}
+  }
 
 .navbarLinks ul{
     margin: 0;
@@ -53,13 +52,13 @@ html {
 
 .navbarLinks li a{
     text-decoration: none;
-    color: white;
+    color: black;
     padding: 2rem;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .navbarLinks a:hover{
-    color: black;
+    color: white;
 }
 
 
@@ -151,6 +150,7 @@ html {
     height: 85vh;
     position: relative;
     overflow: hidden;
+    background-color: #8E6970;
   }
   
   .slideShowPictures{
@@ -167,6 +167,7 @@ html {
     height: 100%;
     object-fit: cover;
     animation: zoomIn 21s infinite;
+    
   }
   
   .slideShowPictures:nth-last-child(1), 
@@ -185,19 +186,19 @@ html {
     top: 50%;
     left: 0;
     transform: translateY(-50%);
-    color:#fff;
+    color:black;
     padding: 10rem 5rem;
   }
   
   .slideShowText h5{
-    font-size: 5rem;
+    font-size: 7rem;
     text-transform: capitalize;
     letter-spacing: 3px;
     margin-bottom: 2.5rem;
   }
   
   .slideShowText p{
-    font-size: 1.6rem;
+    font-size: 2.5rem;
     text-transform: capitalize;
     letter-spacing: 1px;
     font-weight: 300;
@@ -264,7 +265,7 @@ html {
   /*THIS IS THE START OF THE CODE FOR THE WHY US PAGE CODE*/
 
   .whyUs{
-      background-color: #8D6B94;
+      background-color: #8E6970;
   }
 
   .whyUs h1{
@@ -272,6 +273,7 @@ html {
       text-align: center;
       padding-top: 50px;
       padding-bottom: 10px;
+      
   }
 
 
@@ -285,7 +287,7 @@ html {
     /*THIS IS THE START OF THE CODE FOR THE FULL PAGE SLIDER CODE*/
 
     .aboutUs{
-        background-color: #8D6B94;
+        background-color: #8E6970;
     }
 
     .aboutUs h1{
@@ -298,7 +300,8 @@ html {
 
     .container h4, p{
       text-align: center;
-      font-size: 15px;
+      padding-top: 10px;
+      font-size: 20px;
     }
   
   /* Float four columns side by side */
@@ -306,7 +309,7 @@ html {
   float: left;
   width: 25%;
   padding: 0 10px;
-  background-color: #8D6B94;
+  background-color: #8E6970;
 }
 
 
@@ -316,7 +319,7 @@ html {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
   padding: 16px;
   text-align: center;
-  background-color: #8D6B94;
+  background-color: #8E6970;
   margin-bottom: 100px;
 }
 
@@ -341,7 +344,7 @@ html {
       bottom: 0;
       left: 0;
       width: 100%;
-      background: #8D6B94;
+      background: #8E6970;
       text-align: center;
       color: black;
   }
