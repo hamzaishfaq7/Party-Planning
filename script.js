@@ -12,3 +12,17 @@ function showSlides() {
   slides[slideIndex-1].style.display = "block";
   setTimeout(showSlides, 6000); // Change image every 2 seconds
 }
+
+
+
+
+
+
+
+const toggle = document.getElementsByClassName('toggle')[0]
+const navbarLinks = document.getElementsByClassName('navbarLinks')[0]
+
+
+toggle.addEventListener('click', () => {
+    navbarLinks.classList.toggle('active')
+})
