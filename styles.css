@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
 /*THIS IS THE START OF THE GENERAL LAYOUT CODE*/
 
 html {
@@ -20,7 +21,7 @@ body {
 }
 
 .changeText {
-  color: #8e6970;
+  color: #b3a4a4;
 }
 
 /*THIS IS THE END OF THE GENERAL LAYOUT CODE*/
@@ -31,7 +32,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #8e6970;
+  background-color: #b3a4a4;
 }
 
 .logo {
@@ -55,13 +56,13 @@ body {
 
 .navbarLinks li a {
   text-decoration: none;
-  color: black;
+  color: white;
   padding: 2rem;
   font-size: 25px;
 }
 
 .navbarLinks a:hover {
-  color: white;
+  color: black;
 }
 
 .toggle {
@@ -124,7 +125,7 @@ body {
   height: 85vh;
   position: relative;
   overflow: hidden;
-  background-color: #8e6970;
+  background-color: #b3a4a4;
 }
 
 .slideShowPictures {
@@ -225,7 +226,8 @@ body {
 /*THIS IS THE START OF THE CODE FOR THE WHY US PAGE CODE*/
 
 .whyUs {
-  background-color: #8e6970;
+  background-color: #5f656b;
+  color: white;
 }
 
 .whyUs h1 {
@@ -235,19 +237,31 @@ body {
   padding-bottom: 10px;
 }
 
-/*THIS IS THE END OF THE CODE FOR THE WHY US PAGE CODE*/
-
-/*THIS IS THE START OF THE CODE FOR THE FULL PAGE SLIDER CODE*/
-
-.aboutUs {
-  background-color: #8e6970;
+.whyUs h2 {
+  font-size: 65px;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 10px;
+  font-family: 'Parisienne', cursive;
+  color: lightgrey;
 }
 
-.aboutUs h1 {
+/*THIS IS THE END OF THE CODE FOR THE WHY US PAGE CODE*/
+
+/*THIS IS THE START OF THE SERVICES PAGE CODE*/
+
+.services{
+  background-color: #b3a4a4;  
+
+}
+
+.services h1 {
   padding-top: 25px;
   text-align: center;
-  font-size: 35px;
+  font-size: 65px;
   padding-bottom: 15px;
+  color: white;
+  font-family: 'Parisienne', cursive;
 }
 
 .container h4,
@@ -261,20 +275,69 @@ p {
   float: left;
   width: 25%;
   padding: 0 10px;
-  background-color: #8e6970;
+  background-color: #b3a4a4;
 }
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 16px;
   text-align: center;
-  background-color: #8e6970;
-  margin-bottom: 100px;
+  background-color: #b3a4a4;
+  margin-bottom: 0px;
   overflow: hidden;
 }
 
 @media screen and (max-width: 800px) {
-  .column {
+  .col {
+    width: 100%;
+    display: contents;
+    margin-bottom: 20px;
+  }
+}
+
+/*THIS IS THE END OF THE SERVICES PAGE CODE*/
+
+
+/*THIS IS THE START OF THE CODE FOR THE FULL PAGE SLIDER CODE*/
+
+.aboutUs {
+  background-color: #b3a4a4;
+}
+
+.aboutUs h1 {
+  padding-top: 25px;
+  text-align: center;
+  font-size: 65px;
+  padding-bottom: 15px;
+  color: white;
+  font-family: 'Parisienne', cursive;
+}
+
+.container h4,
+p {
+  text-align: center;
+  padding-top: 10px;
+  font-size: 20px;
+}
+
+.col {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+  background-color: #b3a4a4;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #b3a4a4;
+  margin-bottom: 0px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 800px) {
+  .col {
     width: 100%;
     display: contents;
     margin-bottom: 20px;
@@ -288,16 +351,20 @@ p {
   bottom: 0;
   left: 0;
   width: 100%;
-  background: #8e6970;
+  background: #5f656b;
   text-align: center;
-  color: black;
+  color: white;
+  
 }
 
 .footer h1 {
   font-size: 24px;
+  padding-top: 5vh;
+  padding-bottom: 1vh;
 }
 .footer h2 {
   font-size: 20px;
+  padding-bottom: 1vh;
 }
 
 .icons {
@@ -308,7 +375,7 @@ p {
   text-decoration: none;
   font-size: 4rem;
   margin: 0.5rem;
-  color: black;
+  color: white;
 }
 
 .company-name {
