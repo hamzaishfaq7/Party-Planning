@@ -242,7 +242,6 @@ body {
   text-align: center;
   padding-top: 50px;
   padding-bottom: 10px;
-  font-family: 'Parisienne', cursive;
   color: lightgrey;
 }
 
@@ -261,7 +260,7 @@ body {
   font-size: 65px;
   padding-bottom: 15px;
   color: white;
-  font-family: 'Parisienne', cursive;
+  
 }
 
 .container h4,
@@ -310,7 +309,7 @@ p {
   font-size: 65px;
   padding-bottom: 15px;
   color: white;
-  font-family: 'Parisienne', cursive;
+  
 }
 
 .container h4,
