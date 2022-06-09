@@ -12,12 +12,14 @@ html {
   padding: 0;
   width: auto;
   height: auto;
+  
 }
 
 body {
   margin: 0;
   padding: 0;
   font-family: "Source Code Pro", monospace;
+  background-color:#5f656b;
 }
 
 .changeText {
@@ -246,6 +248,21 @@ body {
 }
 
 /*THIS IS THE END OF THE CODE FOR THE WHY US PAGE CODE*/
+/*THIS IS THE END OF THE CODE FOR THE WHY US PAGE CODE*/
+/*THIS IS THE END OF THE CODE FOR THE WHY US PAGE CODE*/
+/*THIS IS THE END OF THE CODE FOR THE WHY US PAGE CODE*/
+/*THIS IS THE END OF THE CODE FOR THE WHY US PAGE CODE*/
+/*THIS IS THE END OF THE CODE FOR THE WHY US PAGE CODE*/
+/*THIS IS THE END OF THE CODE FOR THE WHY US PAGE CODE*/
+/*THIS IS THE END OF THE CODE FOR THE WHY US PAGE CODE*/
+/*THIS IS THE END OF THE CODE FOR THE WHY US PAGE CODE*/
+/*THIS IS THE END OF THE CODE FOR THE WHY US PAGE CODE*/
+/*THIS IS THE END OF THE CODE FOR THE WHY US PAGE CODE*/
+/*THIS IS THE END OF THE CODE FOR THE WHY US PAGE CODE*/
+/*THIS IS THE END OF THE CODE FOR THE WHY US PAGE CODE*/
+/*THIS IS THE END OF THE CODE FOR THE WHY US PAGE CODE*/
+/*THIS IS THE END OF THE CODE FOR THE WHY US PAGE CODE*/
+
 
 /*THIS IS THE START OF THE SERVICES PAGE CODE*/
 
@@ -257,7 +274,7 @@ body {
 .services h1 {
   padding-top: 25px;
   text-align: center;
-  font-size: 65px;
+  font-size: 55px;
   padding-bottom: 15px;
   color: white;
   
@@ -395,3 +412,188 @@ p {
 }
 
 /*THIS IS THE END OF THE CODE FOR THE FOOTER LAYOUT*/
+
+
+
+/*THIS IS THE START OF THE SERVICES PAGE*/
+/*THIS IS THE START OF THE SERVICES PAGE*/
+/*THIS IS THE START OF THE SERVICES PAGE*/
+/*THIS IS THE START OF THE SERVICES PAGE*/
+/*THIS IS THE START OF THE SERVICES PAGE*/
+
+
+
+
+
+/*THIS IS THE CODE FOR THE PROJECTS SECTION*/
+
+.format {
+  justify-content: center;
+  align-content: center;
+}
+
+.project_heading {
+  position: relative;
+  
+}
+
+.project_heading h1 {
+  padding-bottom: 50px;
+  
+}
+
+.projects {
+  align-content: center;
+  margin: 4px;
+  background-color:#5f656b;
+}
+
+.projects h1 {
+  text-align: center;
+  font-size: 50px;
+  color: white;
+}
+
+.projects h2 {
+  text-align: center;
+  font-size: 40px;
+  color: white;
+}
+
+.SStarImage {
+  position: absolute;
+  width: 100%;
+  height: 200vh;
+}
+
+/*THIS IS THE CODE FOR THE FLIP CARDS LAYOUT*/
+
+.servicesOffered {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  vertical-align: top;
+
+  width: 100%;
+}
+.s-heading {
+  text-align: center;
+  width: 100%;
+}
+.s-heading h1 {
+  color: white;
+  font-size: 5.5rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin: 0px;
+
+  width: 100%;
+}
+.s-heading p {
+  color: white;
+  font-size: 3rem;
+  margin: 5px;
+  text-align: center;
+}
+.s-box-container {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.s-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  width: 100%;
+  padding: 8px 25px;
+  height: 100%;
+  box-sizing: border-box;
+  margin: 10px;
+  position: relative;
+}
+.s-box img {
+  height: 100%;
+  width: 100%;
+  padding: 5px;
+}
+
+.picture2 img {
+  height: 100%;
+  width: 100%;
+}
+
+.s-box h1 {
+  color: white;
+  letter-spacing: 1px;
+  font-size: 3rem;
+  margin-bottom: 8px;
+}
+.s-box p {
+  color: white;
+  text-align: center;
+  font-size: 1.8rem;
+}
+.s-btn {
+  width: 140px;
+  height: 80px;
+  border-radius: 20px;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  margin-top: 10px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: black;
+  margin-bottom: 10px;
+}
+.bar {
+  width: 100px;
+  height: 6px;
+  position: absolute;
+  left: 50%;
+  top: 0%;
+  transform: translateX(-50%);
+  background-color: white;
+  border-radius: 0px 0px 10px 10px;
+  display: none;
+  animation: bar 0.8s;
+}
+.s-box:hover {
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.08);
+  transition: all ease 0.5s;
+}
+.s-btn:hover {
+  background-color: darkgrey;
+  border: 1px solid white;
+  color: white;
+  transition: all ease 0.3s;
+}
+
+@media (max-width: 1050px) {
+  .s-box-container {
+    flex-wrap: wrap;
+    width: 100%;
+    padding-top: 5px;
+  }
+  .servicesOffered {
+    height: auto;
+  }
+  .s-heading {
+    margin: 15px;
+  }
+  .s-box {
+    flex-grow: 3;
+  }
+}
+
+/*THIS IS THE END OF THE CODE FOR THE FLIP CARD LAYOUT*/
+
+/*THIS IS THE END OF THE CODE FOR THE PROJECTS SECTION*/
