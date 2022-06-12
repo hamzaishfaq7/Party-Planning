@@ -242,11 +242,11 @@ body {
 }
 
 .whyUs h2 {
-  font-size: 65px;
+  font-size: 55px;
   text-align: center;
   padding-top: 40px;
   padding-bottom: 10px;
-  color: lightgrey;
+  color: white;
 }
 
 /*THIS IS THE END OF THE CODE FOR THE WHY US PAGE CODE*/
@@ -590,7 +590,7 @@ p {
 .aboutUsWhite {
   color: white;
   padding-top: 30px;
-  font-size: 30px;
+  font-size: 55px;
 }
 
 /* STYLE ALL THE INPUTS AND BUTTONS */
@@ -676,3 +676,9 @@ input[type="submit"] {
 }
 
 /*THIS IS THE END OF THE CODE FOR THE FORM LAYOUT*/
+
+.remove_underline{
+  text-decoration: none;
+  color:black;
+  font-size: 25px;
+}
