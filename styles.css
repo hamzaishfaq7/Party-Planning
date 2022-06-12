@@ -25,7 +25,7 @@ body {
 }
 
 .changeText {
-  color: #b3a4a4;
+  color: white;
 }
 
 /*THIS IS THE END OF THE GENERAL LAYOUT CODE*/
@@ -580,3 +580,96 @@ p {
 /*THIS IS THE END OF THE CODE FOR THE FLIP CARD LAYOUT*/
 
 /*THIS IS THE END OF THE CODE FOR THE PROJECTS SECTION*/
+
+/*THIS IS THE CODE FOR THE FORM LAYOUT*/
+
+.formSection {
+  background-color: #b3a4a4;
+}
+
+.aboutUsWhite {
+  color: white;
+}
+
+/* STYLE ALL THE INPUTS AND BUTTONS */
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1.5px solid white;
+  border-radius: 30px;
+  box-sizing: border-box;
+  resize: vertical;
+  color: white;
+  margin-bottom: 40px;
+}
+
+/* STYLE THE LABEL */
+label {
+  padding: 12px 12px 22px 0;
+  display: inline-block;
+  color: white;
+  font-size: 25px;
+  float: left;
+}
+
+/* STYLE THE SUBMIT BUTTON */
+input[type="submit"] {
+  background-color: #5f656b;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  
+  width: 40%;
+}
+
+/* STYLE THE CONTAINER */
+.container {
+  border-radius: 5px;
+  padding: 20px;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.col-25 {
+  float: left;
+  width: 70%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.row {
+  margin: auto;
+  max-width: 450px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* MAKE RESPONSIVE */
+@media screen and (max-width: 600px) {
+  .col-25,
+  .col-75,
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+.column {
+  width: 25em;
+}
+
+/*THIS IS THE END OF THE CODE FOR THE FORM LAYOUT*/
